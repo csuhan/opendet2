@@ -1,0 +1,16 @@
+_BASE_: "./Base-RCNN-FPN-OPENDET.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  RESNETS:
+    DEPTH: 50
+  ROI_BOX_HEAD:
+    OUTPUT_LAYERS: "CosineFastRCNNOutputLayers" # baseline use a simple cosine FRCNN
+DATASETS:
+  TRAIN: ('voc_2007_train', 'voc_2012_trainval')
+  TEST: ('voc_2007_test', 'voc_coco_20_40_test', 'voc_coco_20_60_test', 'voc_coco_20_80_test', 'voc_coco_2500_test', 'voc_coco_5000_test', 'voc_coco_10000_test', 'voc_coco_20000_test')
+SOLVER:
+  STEPS: (21000, 29000)
+  MAX_ITER: 32000
+  WARMUP_ITERS: 100
+  AMP:
+    ENABLED: True

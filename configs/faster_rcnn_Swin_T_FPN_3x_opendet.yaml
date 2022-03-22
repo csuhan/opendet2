@@ -1,0 +1,25 @@
+_BASE_: "./Base-RCNN-FPN-OPENDET.yaml"
+MODEL:
+  WEIGHTS: "checkpoints/swin_tiny_patch4_window7_224_d2.pth"
+  PIXEL_MEAN: [123.675, 116.28, 103.53]
+  PIXEL_STD: [58.395, 57.12, 57.375]
+  RESNETS:
+    DEPTH: 50
+  BACKBONE:
+    NAME: "build_swint_fpn_backbone"
+  SWINT:
+    OUT_FEATURES: ["stage2", "stage3", "stage4", "stage5"]
+  FPN:
+    IN_FEATURES: ["stage2", "stage3", "stage4", "stage5"]
+DATASETS:
+  TRAIN: ('voc_2007_train', 'voc_2012_trainval')
+  TEST: ('voc_2007_test', 'voc_coco_20_40_test', 'voc_coco_20_60_test', 'voc_coco_20_80_test', 'voc_coco_2500_test', 'voc_coco_5000_test', 'voc_coco_10000_test', 'voc_coco_20000_test')
+SOLVER:
+  STEPS: (21000, 29000)
+  MAX_ITER: 32000
+  WARMUP_ITERS: 100
+  WEIGHT_DECAY: 0.05
+  BASE_LR: 0.0001
+  OPTIMIZER: "ADAMW"
+  AMP:
+    ENABLED: True
