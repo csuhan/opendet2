@@ -61,9 +61,9 @@ We report the results on VOC and VOC-COCO-20, and provide pretrained models. Ple
 
 
 **Note**:
-* If you cannot access google drive, BaiduYun download link can be found [here](https://pan.baidu.com/s/1I4Pp40pM84aeYTNeGc0kPA) with extracting code ABCD.
+* You can also download the pre-trained models at [github release](https://github.com/csuhan/opendet2/releases) or [BaiduYun](https://pan.baidu.com/s/1I4Pp40pM84aeYTNeGc0kPA) with extracting code ABCD.
 * The above results are reimplemented. Therefore, they are slightly different from our paper.
-* The official code of ORE is at [OWOD](https://github.com/JosephKJ/OWOD). We do not plan to include ORE in our code. 
+* The official code of ORE is at [OWOD](https://github.com/JosephKJ/OWOD). So we do not plan to include ORE in our code. 
 
 ### Online Demo
 
@@ -101,8 +101,8 @@ If you find our work useful for your research, please consider citing:
 
 ```BibTeX
 @InProceedings{han2022opendet,
-    author    = {Han, Jiaming and Ren, Yuqiang and Ding, Jian and Pan, Xingjia and Yan, Ke and Xia, Gui-Song},
     title     = {Expanding Low-Density Latent Regions for Open-Set Object Detection},
+    author    = {Han, Jiaming and Ren, Yuqiang and Ding, Jian and Pan, Xingjia and Yan, Ke and Xia, Gui-Song},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     year      = {2022}
 }
