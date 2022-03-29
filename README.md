@@ -4,7 +4,7 @@
 
 > **Expanding Low-Density Latent Regions for Open-Set Object Detection (CVPR2022)**<br>
 > [Jiaming Han](https://csuhan.com), [Yuqiang Ren](https://github.com/Anymake), [Jian Ding](https://dingjiansw101.github.io), [Xingjia Pan](https://scholar.google.com.hk/citations?user=NaSU3eIAAAAJ&hl=zh-CN), Ke Yan, [Gui-Song Xia](http://www.captain-whu.com/xia_En.html).<br>
-> [arXiv preprint](https://csuhan.com/attaches/cvpr_3605_final.pdf).
+> [arXiv preprint](https://arxiv.org/abs/2203.14911).
 
 OpenDet2: OpenDet is implemented based on [detectron2](https://github.com/facebookresearch/detectron2).
 
