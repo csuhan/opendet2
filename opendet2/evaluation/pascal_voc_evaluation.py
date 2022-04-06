@@ -209,7 +209,7 @@ class PascalVOCDetectionEvaluator(DatasetEvaluator):
         )
         self.logger.info("\n" + table)
 
-        return {",".join(results_head): ",".join([str(round(x,2)) for x in results_data[0]])}
+        return {metric:round(x,2) for metric, x in zip(results_head, results_data[0])}
 
 
 @lru_cache(maxsize=None)
