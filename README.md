@@ -49,7 +49,7 @@ We report the results on VOC and VOC-COCO-20, and provide pretrained models. Ple
 | PROSER  |   R-50   |            79.42           |        20.44        |         14266         |         56.72         |         16.99        | [config](configs/faster_rcnn_R_50_FPN_3x_proser.yaml) [model](https://drive.google.com/drive/folders/1_L85gisyvDtBXPe2UbI49vrd5FoBIOI_?usp=sharing) |
 | ORE     |   R-50   |            79.80           |        18.18        |         12811         |         58.25         |         2.60         | [config]() [model]() |
 | DS      |   R-50   |            79.70           |        16.76        |         13062         |         58.46         |         8.75         | [config](configs/faster_rcnn_R_50_FPN_3x_ds.yaml) [model](https://drive.google.com/drive/folders/1OWDjL29E2H-_lSApXqM2r8PS7ZvUNtiv?usp=sharing) |
-| OpenDet |   R-50   |            80.02           |        12.50        |         10758         |         58.64         |         14.38        | [config](configs/faster_rcnn_R_50_FPN_3x_opendet.yaml) [model](https://drive.google.com/drive/folders/10uFOLLCK4N8te08-C-olRyDV-cJ-L6lU?usp=sharing) |
+| OpenDet |   R-50   |            80.02           |        12.50        |         10758         |         58.64         |         14.38        | [config](configs/faster_rcnn_R_50_FPN_3x_opendet.yaml) [model](https://drive.google.com/drive/folders/1fzD0iJ6lJrPL4ffByeO9M-udckbYqIxY?usp=sharing) |
 | OpenDet |  Swin-T  |            83.29           |        10.76        |          9149         |         63.42         |         16.35        | [config](configs/faster_rcnn_Swin_T_FPN_3x_opendet.yaml) [model](https://drive.google.com/drive/folders/1j5SkEzeqr0ZnGVVZ4mzXSOvookHfvVvm?usp=sharing) |
 
 * **RetinaNet**
